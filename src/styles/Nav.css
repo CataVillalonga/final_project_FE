@@ -5,6 +5,7 @@ nav {
   margin: 20px 20px 0px;
   border: 1px solid var(--grey);
   border-radius: 20px;
+  min-width: 253px;
 }
 
 ul {
@@ -24,7 +25,7 @@ input[type=text] {
 }
 
 .row {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -188,7 +189,7 @@ input[type=text] {
 .categories {
   color: black;
   font-size: 2rem;
-  margin: 0 250px
+  margin: 0 250px;
 }
 
 .h1 {
@@ -218,16 +219,16 @@ input[type=text] {
 }
 
 .desktop {
-  display: none
+  display: none;
 }
 
 @media only screen and (min-width: 991px) {
   .desktop {
-    display: block
+    display: block;
   }
 
   .mobile {
-    display: none
+    display: none;
   }
 
   input[type=text] {
@@ -258,11 +259,11 @@ input[type=text] {
   }
 
   .categories {
-    margin: 0 70px
+    margin: 0 70px;
   }
   
   .p {
-    font-size: 2rem;;
+    font-size: 2rem;
     margin: 20px -10px 10px; 
     padding: 5px 0;
     background-color: black;
@@ -281,7 +282,7 @@ input[type=text] {
 
 @media only screen and (min-width: 1148px) {
   .categories {
-    margin: 0 150px
+    margin: 0 150px;
   }
 
   .closebtn {
@@ -292,7 +293,7 @@ input[type=text] {
   }
 
   .p {
-    font-size: 2rem;;
+    font-size: 2rem;
     margin: 20px -10px 10px; 
     padding: 5px 0;
     background-color: black;

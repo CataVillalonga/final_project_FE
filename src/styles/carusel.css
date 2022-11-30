@@ -1,0 +1,22 @@
+.carousel-container{
+  height: 30rem;
+}
+
+.carousel img{
+  width: 100%!important;
+  height: 30rem;
+  object-fit: cover;
+}
+.carousel-indicators {
+  display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .carousel-container {
+    height: 50rem;
+  }
+  .carousel img{
+    height: 50rem;
+  }
+}

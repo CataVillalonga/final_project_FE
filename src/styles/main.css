@@ -1,0 +1,30 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main-title{
+  justify-content: center;
+  font-weight: 600;
+  margin: 2rem 0 0 0;
+  color: #090909;
+  padding: 0.65rem;
+  font-family: cursive;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+.subcategory-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+}
+
+@media only screen and (min-width: 1020px) {
+  
+  .subcategory-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 0 4rem;
+  }
+}

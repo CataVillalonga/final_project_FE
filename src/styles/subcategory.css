@@ -1,0 +1,42 @@
+.subcategory{
+  position: relative;
+  text-align: center;
+  color: white
+}
+
+.subcategory img{
+  width: 100%;
+  min-height: 17rem;
+  max-height: 17rem;
+  filter: brightness(80%);
+  border-radius: 15px;
+  padding: 0.5rem;
+  object-fit: cover;
+}
+
+.subcategory img:hover {
+  filter: brightness(20%);
+  transition: all 0.5s ease;
+}
+
+.subcategory p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow:  2px 2px black;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .subcategory img{
+    min-height: 30rem;
+    max-height: 30rem;
+  }
+
+  .subcategory p{
+    font-size: 4rem;
+  }
+
+}

@@ -1,0 +1,295 @@
+nav {
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+  margin: 20px 20px 0px;
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li{
+  display: inline;
+}
+
+input[type=text] {
+  width: 100%;
+  border: 1px solid #EBC26F;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 0 10px 10px; 
+}
+
+.row {
+  display:flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  justify-content: left;
+  max-width: 150px;
+  margin: 0 0 0 -5px;
+}
+
+.sidepanel {
+  width: 300px;
+  position: fixed;
+  z-index: 98;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2a2a2a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #EBC26F;
+}
+
+.sidepanel a:visited{
+  color: #818181;
+  text-decoration: none;
+}
+
+.sidepanel .a:hover {
+  color: #EBC26F;
+  text-decoration: none;
+}
+
+.sidepanel .a:active {
+  color: #EBC26F;
+  text-decoration: none;
+}
+
+.sidepanel .closebtn {
+  /* color: #818181; */
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 46px;
+  background-color: #2a2a2a;
+}
+
+.closebtn {
+  color: #EBC26F;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.closebtn:hover {
+  color: #EBC26F;
+}
+
+.openbtn {
+  font-size: 46px;
+  padding: 0 0 10px 0;
+  cursor: pointer;
+  background-color: rgba(17, 17, 17, 0);
+  color: #2a2a2a;
+  border: none;
+}
+
+.openbtn:hover {
+  color: #EBC26F;
+}
+
+.logo {
+  justify-content: center;
+  padding: 0;
+}
+
+.CIKC-Logo {
+  height: 6.5rem;
+  width: 6.5rem;
+  cursor: pointer;
+}
+
+.iconAndButton {
+  justify-content: right;
+  max-width: 150px;
+}
+
+.shoppingBagIcon {
+  font-size: 3.5rem;
+  padding: 0 8px 8px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #77A47E;
+  border: 0.5px solid #77A47E;
+  border-radius: 4px;
+  color: white;
+  font-size: 2rem;
+  height: 40px;
+  width: 80px;
+}
+
+.a {
+  color: #2a2a2a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.a:visited{
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+.a:hover {
+  color: #EBC26F;
+  text-decoration: none;
+}
+
+.a:active {
+  color: #EBC26F;
+  text-decoration: none;
+}
+
+.categories {
+  color: black;
+  font-size: 2rem;
+  margin: 0 250px
+}
+
+.h1 {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  margin: 20px 0px 20px;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.p {
+  font-size: 2rem;;
+  margin: 20px -10px 10px; 
+  padding: 5px 0;
+  background-color: black;
+  color: #EBC26F;
+  cursor: pointer;
+}
+
+.error {
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.desktop {
+  display: none
+}
+
+@media only screen and (min-width: 991px) {
+  .desktop {
+    display: block
+  }
+
+  .mobile {
+    display: none
+  }
+
+  input[type=text] {
+    border: 1px solid #EBC26F;
+    border-radius: 5px;
+    padding: 0 0 10px 10px;
+  }
+
+  .closebtn {
+    color: #EBC26F;
+    width: 30px;
+    padding: 0;
+  }
+
+  .logo {
+    justify-content: left;
+    max-width: 88px;
+    padding: 0;
+  }
+
+  .iconAndButton {
+    justify-content: right;
+    max-width: 150px;
+  }
+
+  .shoppingBagIcon {
+    font-size: 3.5rem;
+    padding: 0 8px 8px 0;
+  }
+
+  .categories {
+    margin: 0 70px
+  }
+  
+  .p {
+    font-size: 2rem;;
+    margin: 20px -10px 10px; 
+    padding: 5px 0;
+    background-color: black;
+    color: #EBC26F;
+    cursor: pointer;
+  }
+
+  .error {
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
+    margin: -10px 0 15px;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1148px) {
+  .categories {
+    margin: 0 150px
+  }
+
+  .closebtn {
+    color: #EBC26F;
+    width: 30px;
+    height: 60px;
+    padding: 0;
+  }
+
+  .p {
+    font-size: 2rem;;
+    margin: 20px -10px 10px; 
+    padding: 5px 0;
+    background-color: black;
+    color: #EBC26F;
+    cursor: pointer;
+  }
+
+  .error {
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
+    margin: -10px 0 15px;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+}
+

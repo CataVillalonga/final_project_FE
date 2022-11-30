@@ -1,7 +1,7 @@
-import { deleteItem,  deleteAllCart } from '../Modules/Cart'
+import { cartFunc } from '../Modules/Cart';
 import { useAuth0 } from "@auth0/auth0-react";
-import '../styles/Cart.css'
-
+import '../styles/Cart.css';
+const { deleteItem,  deleteAllCart } = cartFunc;
 
 function Cart({ style, setStyle, cart, setCart }) {
   const {user, isAuthenticated } = useAuth0();

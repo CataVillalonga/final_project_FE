@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { getCart } from "./Modules/Cart"
+import { cartFunc } from "./Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
 import Home from './Routes/Home'
 import Profile from './Auth/Profile'
@@ -8,6 +8,8 @@ import ProductCategory from './Routes/ProductCategory';
 import ProductSubcategory from './Routes/ProductSubcategory';
 import Product from './Routes/Product';
 import './App.css';
+
+const { getCart } = cartFunc;
 
 function App() {
 

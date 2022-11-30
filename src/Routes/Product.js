@@ -1,9 +1,11 @@
 import Nav from "../Components/Nav"
 import Login from "../Auth/Login"
 import React, { useState } from "react";
-import { addToCart } from "../Modules/Cart"
+import { cartFunc } from "../Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
 import '../styles/product.css'
+
+const { addToCart } = cartFunc;
 function Product({ item, setCart, cart, data }) {
 
   const {user, isAuthenticated } = useAuth0();

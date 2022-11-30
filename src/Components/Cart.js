@@ -72,7 +72,7 @@ function Cart({ style, setStyle, cart, setCart }) {
               <p className="price">{`${totalPrice}`}</p>
             </div>
             <button onClick={Checkout} className="checkoutBtn">Go To Checkout</button>
-          </div>}
+        </div>}
     </section>
   )
 }

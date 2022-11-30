@@ -38,7 +38,7 @@ function App() {
   return (
     <>
     <Routes>
-        <Route path="/Checkout" element={<Checkout cart={cart}/>}></Route>
+        <Route path="/Checkout" element={<Checkout data={data} cart={cart} setCart={setCart}/>}></Route>
         <Route path="/Profile" element={<Profile data={data} cart={cart}/>}></Route>
         <Route path="/" element={<Home data={data} cart={cart} setCart={setCart}/>}></Route>
         {data?.map((categoryObj, i )=> {

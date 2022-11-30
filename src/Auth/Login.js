@@ -13,8 +13,8 @@ const LoginButton = () => {
 
   return (
    <>
-   {!isAuthenticated ? <button onClick={loginHandler}>Log In</button> : 
-    <button onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>}
+   {!isAuthenticated ? <button className="button" onClick={loginHandler}>Log In</button> : 
+    <button className="button" onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>}
    </>
    
     )

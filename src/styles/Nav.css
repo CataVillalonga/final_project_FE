@@ -42,7 +42,6 @@ input[type=text] {
 }
 
 .sidepanel {
-  width: 300px;
   position: fixed;
   z-index: 98;
   height: 100%;
@@ -93,7 +92,7 @@ input[type=text] {
 .closebtn {
   color: #EBC26F;
   width: 30px;
-  margin: 0;
+  margin: 8px 0 0;
   padding: 0;
 }
 
@@ -102,7 +101,7 @@ input[type=text] {
 }
 
 .openbtn {
-  font-size: 46px;
+  font-size: 43px;
   padding: 0 0 10px 0;
   cursor: pointer;
   background-color: rgba(17, 17, 17, 0);
@@ -135,6 +134,7 @@ input[type=text] {
   padding: 0 8px 8px;
   cursor: pointer;
   position: relative;
+  margin: 0;
 }
 
 .total-items {
@@ -161,7 +161,7 @@ input[type=text] {
   color: white;
   font-size: 2rem;
   height: 40px;
-  width: 80px;
+  width: 90px;
 }
 
 .a {

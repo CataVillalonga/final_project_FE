@@ -55,9 +55,10 @@
   font-size: 24px;
 }
 
+/* code updated */
 .cart-container {
   padding: 2rem;
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -128,14 +129,11 @@
 }
 
 .checkout {
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   display: grid;
   padding: 1rem;
   background-color: #f0ecec;
-  /* position: sticky;
-  bottom: 0;
-  right: 0; */
 }
 
 .total-price {

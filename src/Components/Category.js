@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import '../styles/category.css'
 
 function Category({ obj }) {
-  const {subcategories} = obj
+
   const navigate = useNavigate();
 
   const categoryHandler = (e) => {

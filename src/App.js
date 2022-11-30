@@ -1,4 +1,4 @@
-import { Routes, Route, json} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getCart } from "./Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
@@ -8,8 +8,6 @@ import ProductCategory from './Routes/ProductCategory';
 import ProductSubcategory from './Routes/ProductSubcategory';
 import Product from './Routes/Product';
 import './App.css';
-
-// const mockData = require('./mock')
 
 function App() {
 
@@ -26,20 +24,13 @@ function App() {
   useEffect(() => {
     getProducts('/api/products')
   },[])
-
-//   useEffect(() => {
-//     setData(mockData)
-//  })
   
-
   useEffect(() => {
-    console.log(isAuthenticated)
     if (isAuthenticated) {
       const name = user.name.replace(' ','-')
-      console.log(name)
       getCart(name).then((res) => setCart(res))
     }
-  },[isAuthenticated])
+  },[isAuthenticated, user])
 
   return (
     <>

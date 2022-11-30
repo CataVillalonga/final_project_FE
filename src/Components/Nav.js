@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { useNavigate } from "react-router-dom";
 import '../styles/Nav.css';
@@ -58,23 +58,23 @@ function Nav({ cart, setCart, data }) {
 
             <aside className="section column menu">
               <div id="mySidepanel" className="sidepanel" style={ {width: isOpen ? '300px' : '0px'} }>
-                <a className="closebtn" onClick={toggle}>×</a>
-                <a className="a column" href='http://localhost:3000/'>Home</a>
-                <a className="a column" href='http://localhost:3000/living-room'>Living Room</a>
-                <a className="a column" href='http://localhost:3000/kitchen'>Kitchen</a>
-                <a className="a column" href='http://localhost:3000/bedroom'>Bedroom</a>
-                <a className="a column" href='http://localhost:3000/bathroom'>Bathroom</a>
-                <a className="a column" href='http://localhost:3000/common-areas'>Common Areas</a>
+                <p className="closebtn" onClick={toggle}>×</p>
+                <a className="a column" href='https://cikc-reloaded-store.netlify.app/'>Home</a>
+                <a className="a column" href='https://cikc-reloaded-store.netlify.app/living-room'>Living Room</a>
+                <a className="a column" href='https://cikc-reloaded-store.netlify.app/kitchen'>Kitchen</a>
+                <a className="a column" href='https://cikc-reloaded-store.netlify.app/bedroom'>Bedroom</a>
+                <a className="a column" href='https://cikc-reloaded-store.netlify.app/bathroom'>Bathroom</a>
+                <a className="a column" href='https://cikc-reloaded-store.netlify.app/common-areas'>Common Areas</a>
               </div>
               <button className="openbtn" onClick={toggle}>☰</button>
             </aside>
           
           <section className="section column logo">
-            <img className="CIKC-Logo" src={require('../images/CIKC_logo.png')} onClick={logoHandler}></img>
+            <img className="CIKC-Logo" alt="logo to appear" src={require('../images/CIKC_logo.png')} onClick={logoHandler}></img>
           </section>
 
           <section className="section column iconAndButton">
-            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></a>
+            <p onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></p>
             <Login/>
           </section>
 
@@ -92,18 +92,12 @@ function Nav({ cart, setCart, data }) {
       </section>
       
       <section className="desktop">
-        
-        {/* <section className="section row">
-          <section className="section column">
-            <h1>Bedroom up to 40%</h1>
-          </section>
-          <button className="button"><i className="fa fa-sign-in"></i></button>
-        </section> */}
+      
         
         <section className="section row">
 
           <section className="section column logo">
-            <img className="CIKC-Logo" src={require('../images/CIKC_logo.png')} onClick={logoHandler}></img>
+            <img className="CIKC-Logo" alt="logo to appear" src={require('../images/CIKC_logo.png')} onClick={logoHandler}></img>
           </section>
 
           <section className="section column searchbox">
@@ -112,7 +106,7 @@ function Nav({ cart, setCart, data }) {
 
 
           <section className="section column iconAndButton">
-            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></a>
+            <p onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></p>
             <Login/>
           </section>
 
@@ -121,11 +115,11 @@ function Nav({ cart, setCart, data }) {
         </section>
 
         <section className="section row categories">
-          <a className="a column" href='http://localhost:3000/living-room'>Living Room</a>
-          <a className="a column" href='http://localhost:3000/kitchen'>Kitchen</a>
-          <a className="a column" href='http://localhost:3000/bedroom'>Bedroom</a>
-          <a className="a column" href='http://localhost:3000/bathroom'>Bathroom</a>
-          <a className="a column" href='http://localhost:3000/common-areas'>Common Areas</a>
+          <a className="a column" href='https://cikc-reloaded-store.netlify.app/living-room'>Living Room</a>
+          <a className="a column" href='https://cikc-reloaded-store.netlify.app/kitchen'>Kitchen</a>
+          <a className="a column" href='https://cikc-reloaded-store.netlify.app/bedroom'>Bedroom</a>
+          <a className="a column" href='https://cikc-reloaded-store.netlify.app/bathroom'>Bathroom</a>
+          <a className="a column" href='https://cikc-reloaded-store.netlify.app/common-areas'>Common Areas</a>
         </section>
 
       </section>

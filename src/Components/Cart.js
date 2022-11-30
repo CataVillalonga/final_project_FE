@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { cartFunc } from '../Modules/Cart';
 import { useAuth0 } from "@auth0/auth0-react";
 import '../styles/Cart.css';
-const { deleteItem,  deleteAllCart } = cartFunc;
+
+const { deleteItem } = cartFunc;
 
 function Cart({ style, setStyle, cart, setCart }) {
+
+  const navigate = useNavigate();
+
   const {user, isAuthenticated } = useAuth0();
   const productList = cart?.products;
   const total = cart?.total_price
@@ -28,13 +33,9 @@ function Cart({ style, setStyle, cart, setCart }) {
     const updatedCart = await deleteItem(name, obj)
     setCart(updatedCart)
   }
-  const deleteCart = async() => {
-    if(!isAuthenticated) {
-      return
-    }
-    const name = user.name.replace(' ','-')
-    await deleteAllCart(name)
-    setCart('')
+  
+  const Checkout = async() => {
+    navigate('/Checkout');
   }
   
   return (
@@ -70,7 +71,7 @@ function Cart({ style, setStyle, cart, setCart }) {
               <p className="price">Total Price (Incl. VAT):</p>
               <p className="price">{`${totalPrice}`}</p>
             </div>
-            <button onClick={deleteCart} className="checkoutBtn">Go To Checkout</button>
+            <button onClick={Checkout} className="checkoutBtn">Go To Checkout</button>
           </div>}
     </section>
   )

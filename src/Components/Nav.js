@@ -74,7 +74,7 @@ function Nav({ cart, setCart, data }) {
           </section>
 
           <section className="section column iconAndButton">
-            <p onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></p>
+          <p onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag />{cart?.products.length > 0 ? <p className="total-items">{cart?.products.length}</p> : null}</p>
             <Login/>
           </section>
 
@@ -106,7 +106,7 @@ function Nav({ cart, setCart, data }) {
 
 
           <section className="section column iconAndButton">
-            <p onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></p>
+            <p onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag />{cart?.products.length > 0 ? <p className="total-items">{cart?.products.length}</p> : null}</p>
             <Login/>
           </section>
 

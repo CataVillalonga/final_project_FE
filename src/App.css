@@ -1,3 +1,10 @@
 .carousel {
   margin: 0 20px;
 }
+
+@media only screen and (min-width: 1368px) {
+  #root {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}

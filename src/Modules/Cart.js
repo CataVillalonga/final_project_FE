@@ -1,5 +1,5 @@
 export const addToCart = async (username, products) => {
-  const response = await fetch('/api/carts', {
+  const response = await fetch('https://cikcreloaded.cyclic.app/api/carts', {
     method:'POST',
     headers: {
       Accept: 'application/json',
@@ -12,13 +12,13 @@ export const addToCart = async (username, products) => {
 };
 
 export const getCart = async (username) => {
-  const response = await fetch(`/api/carts/${username}`)
+  const response = await fetch(`https://cikcreloaded.cyclic.app/api/carts/${username}`)
    const data = await response.json();
    return data[0];
 };
 
 export const deleteItem = async (username, products) => {
-    const response = await fetch('/api/carts', {
+    const response = await fetch('https://cikcreloaded.cyclic.app/api/carts', {
       method:'PATCH',
       headers: {
         Accept: 'application/json',

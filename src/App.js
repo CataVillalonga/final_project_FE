@@ -24,7 +24,7 @@ function App() {
   };
 
   useEffect(() => {
-    getProducts('/api/products')
+    getProducts('https://cikcreloaded.cyclic.app/api/products')
   },[])
   
   useEffect(() => {

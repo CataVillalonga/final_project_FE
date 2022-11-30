@@ -23,7 +23,7 @@ function ProductSubcategory({ itemsObj, category, name, data, cart, setCart }) {
       <section className="product-subcategory-container">
         <section className="offers-container">
           <h4>Design & Comfort</h4>
-          <img src={itemsObj.img} alt="Subcategory image"/>
+          <img src={itemsObj.img} alt="Subcategory to appear"/>
         </section>
         <section className="subcategory-filter-container">
           <label>Sort by:</label>
@@ -43,7 +43,7 @@ function ProductSubcategory({ itemsObj, category, name, data, cart, setCart }) {
           }).map( product => {
             return (
               <section className="subcategory-items">
-                <img id={product.id} src={product.img} onClick={subCategoryHandler} alt="Product image"/>
+                <img id={product.id} src={product.img} onClick={subCategoryHandler} alt="Product to appear"/>
                 <div className="subcategory-items-detail-container">
                 <h4>{product.name}</h4>
                 <p>{product.price}</p>
@@ -60,7 +60,7 @@ function ProductSubcategory({ itemsObj, category, name, data, cart, setCart }) {
           }).map( (product,i) => {
             return (
               <section key={i} className="subcategory-items">
-                <img id={product.id} src={product.img} onClick={subCategoryHandler} alt="Product image"/>
+                <img id={product.id} src={product.img} onClick={subCategoryHandler} alt="Product to appear"/>
                 <div className="subcategory-items-detail-container">
                 <h4>{product.name}</h4>
                 <p>{product.price}</p>

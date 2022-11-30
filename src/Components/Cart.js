@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import '../styles/Cart.css'
 import { deleteItem,  deleteAllCart } from '../Modules/Cart'
 import { useAuth0 } from "@auth0/auth0-react";
+import '../styles/Cart.css'
 
 
 function Cart({ style, setStyle, cart, setCart }) {
@@ -21,8 +20,6 @@ function Cart({ style, setStyle, cart, setCart }) {
 
   priceConverter(total);
 
-  const [pressed, setPressed] = useState(false)
-
   const deleteFromCart = async(obj) => {
     if(!isAuthenticated) {
       return
@@ -39,10 +36,11 @@ function Cart({ style, setStyle, cart, setCart }) {
     await deleteAllCart(name)
     setCart('')
   }
+  
   return (
 <section id="closedsidepanel" className={style}>
     <header className='cart-header'>
-      <h4 className="cart-heading"><img className="cartLogo" src={require('../images/CIKC_round_logo.png')}></img>Your Basket</h4>
+      <h4 className="cart-heading"><img className="cartLogo" alt="item to appear" src={require('../images/CIKC_round_logo.png')}></img>Your Basket</h4>
       <button onClick={() => setStyle('closedsidepanel')} className="closebtn">×</button>
     </header>
     {productList?.length<1 || !productList  ? <div className="cart-message"><h4>Your basket is empty</h4></div> : 

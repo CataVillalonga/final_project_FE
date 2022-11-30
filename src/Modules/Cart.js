@@ -9,18 +9,15 @@ export const addToCart = async (username, products) => {
   });
    const data = await response.json();
    return data[0];
-
 };
-export const getCart = async (username) => {
 
+export const getCart = async (username) => {
   const response = await fetch(`/api/carts/${username}`)
    const data = await response.json();
    return data[0];
-
 };
 
-  export const deleteItem = async (username, products) => {
-
+export const deleteItem = async (username, products) => {
     const response = await fetch('/api/carts', {
       method:'PATCH',
       headers: {
@@ -31,12 +28,10 @@ export const getCart = async (username) => {
     });
     const data = await response.json();
     return data[0];
+};
 
-  };
-
-  export const deleteAllCart = async (username) => {
-
-    const response = await fetch('/api/carts', {
+export const deleteAllCart = async (username) => {
+    await fetch('/api/carts', {
       method:'DELETE',
       headers: {
         Accept: 'application/json',
@@ -46,9 +41,7 @@ export const getCart = async (username) => {
     });
   };
   
-export default {addToCart, getCart, deleteItem, deleteAllCart};
-// const getProducts = async url => {
-//   const response = await fetch(url);
-//   const data = await response.json();
-//   setData(data);
-// };
+export const cartFunc = { addToCart, getCart, deleteItem, deleteAllCart };
+
+export default cartFunc;
+

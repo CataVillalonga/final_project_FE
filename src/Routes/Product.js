@@ -39,7 +39,7 @@ function Product({ item, setCart, cart, data }) {
     <section className="product-container">
       <section className="product-visuals">
         <h3 className="mobile-title">{item.name}</h3>
-        <img src={item.img}/>
+        <img src={item.img} alt="item to appear"/>
       </section>
       <section className="product-details">
       <h3 className="desktop-title">{item.name}</h3>

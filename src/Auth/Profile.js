@@ -4,7 +4,7 @@ import React from "react";
 
 const Profile = () => {
   const navigate = useNavigate();
-  const { user, isAuthenticated, logout, isLoading } = useAuth0();
+  const { isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
     return <div>Loading ...</div>;

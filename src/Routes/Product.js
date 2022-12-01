@@ -31,6 +31,7 @@ function Product({ item, setCart, cart, data }) {
     }, 3000)
     const name = user.name.replace(' ','-')
     if(cart) {
+      await addToCart(name, item)
       const newCart = {...cart}
       const newItem = {...item}
       const productArr = cart.products
@@ -40,8 +41,7 @@ function Product({ item, setCart, cart, data }) {
       newCart.products = productArr
       newCart.total_items = productArr.length
       newCart.total_price = totalPrice(productArr)
-      setCart(newCart)
-      return await addToCart(name, item)
+      return setCart(newCart)
     }
     const updatedCart = await addToCart(name, item)
     setCart(updatedCart)

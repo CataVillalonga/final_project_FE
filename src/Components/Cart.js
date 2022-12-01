@@ -30,12 +30,12 @@ function Cart({ style, setStyle, cart, setCart }) {
       return
     }
     const name = user.name.replace(' ','-')
-    setCart(prevCart => {
+    await deleteItem(name, obj)
+    return setCart(prevCart => {
       const newCart = {...prevCart}
       newCart.products = prevCart.products.filter(product => product !== obj)
       return newCart
     })
-    await deleteItem(name, obj)
   }
   
   const Checkout = async() => {

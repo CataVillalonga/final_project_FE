@@ -5,6 +5,7 @@ nav {
   margin: 20px 20px 0px;
   border: 1px solid var(--grey);
   border-radius: 20px;
+  min-width: 253px;
 }
 
 ul {
@@ -24,7 +25,7 @@ input[type=text] {
 }
 
 .row {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -42,7 +43,6 @@ input[type=text] {
 }
 
 .sidepanel {
-  width: 300px;
   position: fixed;
   z-index: 98;
   height: 100%;
@@ -93,7 +93,7 @@ input[type=text] {
 .closebtn {
   color: #EBC26F;
   width: 30px;
-  margin: 0;
+  margin: 8px 0 0;
   padding: 0;
 }
 
@@ -102,7 +102,7 @@ input[type=text] {
 }
 
 .openbtn {
-  font-size: 46px;
+  font-size: 3.75rem;
   padding: 0 0 10px 0;
   cursor: pointer;
   background-color: rgba(17, 17, 17, 0);
@@ -135,6 +135,7 @@ input[type=text] {
   padding: 0 8px 8px;
   cursor: pointer;
   position: relative;
+  margin: 0;
 }
 
 .total-items {
@@ -161,7 +162,7 @@ input[type=text] {
   color: white;
   font-size: 2rem;
   height: 40px;
-  width: 80px;
+  width: 90px;
 }
 
 .a {
@@ -188,7 +189,7 @@ input[type=text] {
 .categories {
   color: black;
   font-size: 2rem;
-  margin: 0 250px
+  margin: 0 250px;
 }
 
 .h1 {
@@ -218,16 +219,16 @@ input[type=text] {
 }
 
 .desktop {
-  display: none
+  display: none;
 }
 
 @media only screen and (min-width: 991px) {
   .desktop {
-    display: block
+    display: block;
   }
 
   .mobile {
-    display: none
+    display: none;
   }
 
   input[type=text] {
@@ -258,11 +259,11 @@ input[type=text] {
   }
 
   .categories {
-    margin: 0 70px
+    margin: 0 70px;
   }
   
   .p {
-    font-size: 2rem;;
+    font-size: 2rem;
     margin: 20px -10px 10px; 
     padding: 5px 0;
     background-color: black;
@@ -281,7 +282,7 @@ input[type=text] {
 
 @media only screen and (min-width: 1148px) {
   .categories {
-    margin: 0 150px
+    margin: 0 150px;
   }
 
   .closebtn {
@@ -292,7 +293,7 @@ input[type=text] {
   }
 
   .p {
-    font-size: 2rem;;
+    font-size: 2rem;
     margin: 20px -10px 10px; 
     padding: 5px 0;
     background-color: black;

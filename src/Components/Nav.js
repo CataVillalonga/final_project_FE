@@ -57,8 +57,8 @@ function Nav({ cart, setCart, data }) {
         <section className="section row">
 
             <aside className="section column menu">
-              <div id="mySidepanel" className="sidepanel" style={ {width: isOpen ? '300px' : '0px'} }>
-                <p className="closebtn" onClick={toggle}>×</p>
+              <div id="mySidepanel" className="sidepanel" style={ {width: isOpen ? '100%' : '0px'} }>
+                <button className="closebtn" onClick={toggle}>×</button>
                 <a className="a column" href='https://cikc-reloaded-store.netlify.app/'>Home</a>
                 <a className="a column" href='https://cikc-reloaded-store.netlify.app/living-room'>Living Room</a>
                 <a className="a column" href='https://cikc-reloaded-store.netlify.app/kitchen'>Kitchen</a>

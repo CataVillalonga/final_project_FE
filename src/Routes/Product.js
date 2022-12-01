@@ -51,7 +51,7 @@ function Product({ item, setCart, cart, data }) {
           <select className="quantity-selector">
             {quantity.map(num => <option key= {num} value={num}>{num}</option>)}
           </select>
-          <button className="addToCartBtn" onClick={cartHandler}>Add to Basket  </button>
+          <button className="addToCartBtn" onClick={cartHandler}> Add to Basket  </button>
       </div>
         {itemAdded}
         {loginAlert}

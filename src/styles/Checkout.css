@@ -43,6 +43,23 @@ form {
     background-color: #477a4e;
 }
 
+.purchase-message-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.purchase-message {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.purchase-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1020px)  {
   .checkout-container {
     width: 50%;

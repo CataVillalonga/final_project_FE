@@ -19,8 +19,9 @@ function Checkout({data, cart, setCart}) {
     const name = user.name.replace(' ','-');
     await deleteAllCart(name);
     setpurchaseComplete(true);
+    setCart();
     setTimeout(()=> {
-      setpurchaseComplete(true);
+      setpurchaseComplete(false);
       navigate('/');
     }, 3000)
   }
@@ -29,7 +30,12 @@ function Checkout({data, cart, setCart}) {
     <>
     <Nav data={data} cart={cart} setCart={setCart}/>
     <section className="checkout-container">
-      {purchaseComplete ? <article><h3>Thank you for your purchase!</h3></article> :
+    {purchaseComplete ? <article className="purchase-message-container">
+      <h3 className="purchase-message">Thank you for your purchase!</h3>
+      <div className="purchase-img-container">
+        <img className="purchase-img" src={require('../images/CIKC_round_logo.png')} alt="logo to appear"/>
+      </div>
+      </article> :
     <form autoComplete="off" onSubmit={event => purchaseHandler(event)}>
         <label className="checkout-label" for="name">Enter name and delivery address</label>
         <input className="checkout-input" type="text" name="name" placeholder="First Name" required></input>

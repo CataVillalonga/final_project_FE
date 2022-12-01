@@ -123,6 +123,7 @@ input[type=text] {
   height: 6.5rem;
   width: 6.5rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .iconAndButton {
@@ -160,9 +161,9 @@ input[type=text] {
   border: 0.5px solid #77A47E;
   border-radius: 4px;
   color: white;
-  font-size: 2rem;
-  height: 40px;
-  width: 90px;
+  height: 3rem;
+  font-size: 1.5rem;
+  width: 8rem;
 }
 
 .a {

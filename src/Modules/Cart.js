@@ -40,8 +40,21 @@ export const deleteAllCart = async (username) => {
       body: JSON.stringify({username})
     });
   };
+
+  export const totalPrice = productArr => {
+    let total = 0;
+    productArr.forEach(obj => {
+      total += obj.price;
+    });
+    return total;
+  };
+  export const numericPrice = (price) => {
+    const str = price.replace(/[^A-Z0-9]/ig, "");
+    const newPrice = Number(str);
+    return newPrice;
+  }
   
-export const cartFunc = { addToCart, getCart, deleteItem, deleteAllCart };
+export const cartFunc = { addToCart, getCart, deleteItem, deleteAllCart, totalPrice, numericPrice };
 
 export default cartFunc;
 

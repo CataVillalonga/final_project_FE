@@ -5,7 +5,7 @@ import { cartFunc } from "../Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
 import '../styles/product.css'
 
-const { addToCart } = cartFunc;
+const { addToCart, totalPrice, numericPrice } = cartFunc;
 function Product({ item, setCart, cart, data }) {
 
   const {user, isAuthenticated } = useAuth0();
@@ -30,6 +30,19 @@ function Product({ item, setCart, cart, data }) {
       setItemAdded(null)
     }, 3000)
     const name = user.name.replace(' ','-')
+    if(cart) {
+      const newCart = {...cart}
+      const newItem = {...item}
+      const productArr = cart.products
+      const newPrice = numericPrice(item.price);
+      newItem.price = newPrice
+      productArr.push(newItem)
+      newCart.products = productArr
+      newCart.total_items = productArr.length
+      newCart.total_price = totalPrice(productArr)
+      setCart(newCart)
+      return await addToCart(name, item)
+    }
     const updatedCart = await addToCart(name, item)
     setCart(updatedCart)
   }

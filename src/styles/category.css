@@ -22,9 +22,10 @@
   box-sizing: content-box;
 }
 
-.category p{
+.category p {
   height: 2rem;
-  padding: 1rem;
+  padding-top: 1rem;
+  font-size: 1.75rem;
 }
 
 .category img {

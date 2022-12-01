@@ -5,7 +5,7 @@ import '../styles/Nav.css';
 import Login from '.././Auth/Login'
 import Cart from './Cart'
 function Nav({ cart, setCart, data }) {
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const [style, setStyle] = useState('closedsidepanel');
   const [searchKey, setSearchKey] = useState('');
@@ -124,7 +124,7 @@ function Nav({ cart, setCart, data }) {
         </section>
 
       </section>
-      <p className="p">Black Friday Offer ends today!</p>
+      <p className="p">Black Friday Offer Ends Today!</p>
     </nav>
   )
 }

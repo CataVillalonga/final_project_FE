@@ -22,7 +22,7 @@ function ProductSubcategory({ itemsObj, category, name, data, cart, setCart }) {
       <Nav cart={cart} setCart={setCart} data={data}/>
       <section className="product-subcategory-container">
         <section className="offers-container">
-          <h4>Design & Comfort</h4>
+          <h4>Home Comforts & Essentials</h4>
           <img src={itemsObj.img} alt="Subcategory to appear"/>
         </section>
         <section className="subcategory-filter-container">

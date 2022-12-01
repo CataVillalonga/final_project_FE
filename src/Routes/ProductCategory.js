@@ -17,7 +17,7 @@ function ProductCategory({ categoryObj, category, data, cart, setCart }) {
     <section className="product-Category-container">
       <section className="banner-container">
         <img   alt='category'src={categoryObj.img}/>
-        <p>{categoryObj.category}</p>
+        <p>{categoryObj.category.replace('-',' ')}</p>
       </section >
       <h5 className="product-title">Shop by product:</h5>
       <section className="products-container">
@@ -25,7 +25,7 @@ function ProductCategory({ categoryObj, category, data, cart, setCart }) {
           return (
             <section key={i} className="category-items" >
               <img  alt='category' src={item.img}/>
-              <p onClick={categoryHandler}>{item.name}</p>
+              <p onClick={categoryHandler}>{item.name.replace('-',' ')}</p>
             </section>
           )
         })}

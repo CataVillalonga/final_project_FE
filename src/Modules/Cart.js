@@ -31,7 +31,7 @@ export const deleteItem = async (username, products) => {
 };
 
 export const deleteAllCart = async (username) => {
-    await fetch('/api/carts', {
+    await fetch('https://cikcreloaded.cyclic.app/api/carts', {
       method:'DELETE',
       headers: {
         Accept: 'application/json',

@@ -9,7 +9,7 @@ const { deleteAllCart } = cartFunc;
 
 function Checkout({data, cart, setCart}) {
 
-  const [purchaseComplete, setpurchaseComplete] = useState(false);
+  const [purchaseComplete, setPurchaseComplete] = useState(false);
 
   const { user } = useAuth0();
   const navigate = useNavigate();
@@ -18,10 +18,10 @@ function Checkout({data, cart, setCart}) {
     event.preventDefault();
     const name = user.name.replace(' ','-');
     await deleteAllCart(name);
-    setpurchaseComplete(true);
+    setPurchaseComplete(true);
     setCart();
     setTimeout(()=> {
-      setpurchaseComplete(false);
+      setPurchaseComplete(false);
       navigate('/');
     }, 3000)
   }

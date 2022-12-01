@@ -38,6 +38,10 @@
   border-radius: 10px;
 }
 
+.subcategory-filter-container label {
+  margin: 0;
+}
+
 .subcategory-filter-container select {
   margin-left: 1rem;
   border-radius: 5px;

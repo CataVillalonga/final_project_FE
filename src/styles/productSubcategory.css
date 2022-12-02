@@ -93,6 +93,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .subcategory-items img {
+    max-height: 29rem;
+  }
+
 }
 
 @media screen and (min-width: 1020px)  {

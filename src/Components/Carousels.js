@@ -20,7 +20,7 @@ function Carousels() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1607196707151-2db8b71294ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y296eSUyMGNocmlzdG1hc3xlbnwwfHwwfHw%3D&w=1000&q=80"
+          src="https://images.pexels.com/photos/1879061/pexels-photo-1879061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Second slide"
         />
 
@@ -32,7 +32,7 @@ function Carousels() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/5859863/pexels-photo-5859863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.unsplash.com/photo-1607196707151-2db8b71294ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y296eSUyMGNocmlzdG1hc3xlbnwwfHwwfHw%3D&w=1000&q=80"
           alt="Third slide"
         />
 

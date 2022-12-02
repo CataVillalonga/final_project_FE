@@ -93,11 +93,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .subcategory-items img {
-    max-height: 29rem;
-    object-fit: cover;
-  }
-
 }
 
 @media screen and (min-width: 1020px)  {
@@ -120,4 +115,8 @@
     height: 30rem;
   }
 
+  .subcategory-items img {
+    max-height: 40rem;
+    object-fit: cover;
+  }
 }

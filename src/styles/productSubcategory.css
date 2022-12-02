@@ -63,7 +63,7 @@
   object-fit: cover;
   border-radius: 10px;
   filter: brightness(90%);
-  max-height: 29rem;
+  max-height: 25rem;
 }
 
 .subcategory-items img:hover {

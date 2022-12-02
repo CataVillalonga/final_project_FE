@@ -8,7 +8,8 @@ function ProductCategory({ categoryObj, category, data, cart, setCart }) {
 
   const categoryHandler = (e) => {
     const subCat = e.target
-    navigate(`/${category}/${subCat.innerText}`)
+    const name = subCat.innerText.replace(' ', '-')
+    navigate(`/${category}/${name}`)
   }
 
   return (

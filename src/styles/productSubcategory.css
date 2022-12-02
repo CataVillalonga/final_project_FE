@@ -95,6 +95,7 @@
 
   .subcategory-items img {
     max-height: 29rem;
+    object-fit: cover;
   }
 
 }

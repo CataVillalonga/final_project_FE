@@ -286,6 +286,10 @@ input[type=text] {
     margin: 0 150px;
   }
 
+  .button {
+    font-size: 1.75rem;
+  }
+
   .closebtn {
     color: #EBC26F;
     width: 30px;
